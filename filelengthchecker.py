@@ -6,4 +6,5 @@ for dirpath, dirnames, filenames in os.walk('C:\\Users\\jeevan.james\\Desktop\\n
     if len(filenames):
         for file in filenames:
             if len(file) > length:
-                print(os.path.join(dirpath,file))
+                print(os.path.join(dirpath, file))
+

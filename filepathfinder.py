@@ -1,5 +1,4 @@
 import os
-import re
 print()
 words_to_shorten = ['program', 'information', 'management', 'technology']
 shortened_words = ['prgm', 'info', 'mgmnt', 'tech']
@@ -10,7 +9,6 @@ for dirpath, dirnames, filenames in os.walk('C:\\Users\\jeevan.james\\Desktop\\n
     while index < len(words_to_shorten):
         key_word = words_to_shorten[index]
         if key_word in dirpath:
-
             dir_name = os.path.basename(dirpath)
             new_name = dirpath.split(dir_name)
             os.rename(dirpath, os.path.join(new_name[0], dir_name.replace(key_word, shortened_words[index])))
